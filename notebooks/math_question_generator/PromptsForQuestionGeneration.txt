@@ -1,0 +1,2844 @@
+
+Base Conversion to Binary (Base 2)
+Binary Conversion Master: Base 2 to All Bases
+Decimal Conversion Master: Base 10 to All Bases
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Decimal Conversion Master: Base 10 to All Bases"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Decimal to Other Bases)**
+*   All questions must involve converting a decimal number ($Base\ 10$) to a target base including **Base 2, 3, 4, 5, 7, 8, 16, 32, and 64**[cite: 1].
+*   All questions must be of the form: "$[Number]_{10}$ in base [X] is = ____"[cite: 1].
+*   Include a balanced mix of difficulty levels[cite: 1]:
+    *   **Easy:** Base 10 to $Base\ 2, 4,$ or $8$ (numbers under 100)[cite: 1].
+    *   **Medium:** Base 10 to $Base\ 3, 5,$ or $16$ (numbers under 500)[cite: 1].
+    *   **Hard:** Base 10 to $Base\ 32$ or $Base\ 64$ (requiring extended alphanumeric characters)[cite: 1].
+    *   **Advanced:** Large Base 10 numbers (up to 2,000) converted to small bases like $Base\ 2$ or $Base\ 3$[cite: 1].
+*   Format each question exactly like this[cite: 1]:
+    1. $210_{10}$ in base 2 is = ____[cite: 1]
+    2. $210_{10}$ in base 8 is = ____[cite: 1]
+    3. $210_{10}$ in base 16 is = ____[cite: 1]
+*   Do **NOT** repeat decimal numbers[cite: 1].
+*   Do **NOT** create sequential patterns[cite: 1].
+*   Mix difficulty levels throughout[cite: 1].
+*   Provide a blank answer line between 2 columns[cite: 1].
+*   Split questions in 2 columns like (1 with 2, 3 with 4, etc.)[cite: 1].
+*   30 questions per table[cite: 1].
+
+**Part B — Answer Key**
+*   Provide all 240 answers in order[cite: 1].
+*   Format each answer exactly like this[cite: 1]:
+    1. 11010010[cite: 1]
+*   Split answers in 2 columns like (1 with 2, 3 with 4, etc.)[cite: 1].
+*   30 answers per table[cite: 1].
+
+**Part C — Explanation Section**
+*   Explain the concept of **Base 10** as a positional system and how it relates to other bases[cite: 1].
+*   **Extended Character Sets:** Define the standard for bases above 10, including A–F for $Base\ 16$ and the expansion into further letters for $Base\ 32$ and $Base\ 64$[cite: 1].
+*   Show two conversion methods[cite: 1]:
+    *   **Successive Division Method:** Dividing by the target base and tracking remainders[cite: 1].
+    *   **Subtraction of Powers Method:** Finding the largest power of the target base that fits[cite: 1].
+*   Provide 5 fully worked examples, including one conversion to $Base\ 32$[cite: 1].
+
+**Part D — Math League Teaching Strategy**
+*   Provide speed tips for dividing by large bases like 16 or 32[cite: 1].
+*   Memorization list: Powers of 2, 3, 4, and 5 to identify place values quickly[cite: 1].
+*   Identify common mistakes: Forgetting that a remainder of 10 in $Base\ 16$ must be written as "A"[cite: 1].
+*   Discuss "Power-of-2" shortcuts (e.g., converting to $Base\ 2$ first and then grouping to reach $Base\ 8, 16, 32,$ or $64$)[cite: 1].
+
+**Part E — Teacher Notes**
+*   Provide one paragraph of coaching advice for contest preparation. Focus on the high-value nature of base conversion questions in the Number Sense round and how to stay organized during multi-step divisions[cite: 1].
+
+**Output instructions:**
+*   After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+*   Clean, minimal styling — simple grid, no heavy color blocks[cite: 1].
+*   Questions run continuously with forced page breaks between sub-tables[cite: 1].
+*   Questions and Answer Key should have a forced page break between them[cite: 1].
+*   Answer key mirrors the same layout as the question tables[cite: 1].
+*   Answer key runs continuously without forced page breaks between sub-tables[cite: 1].
+*   Compile everything into a single downloadable PDF[cite: 1].
+
+"""
+
+"""
+for the given question: 
+""" 
+Convert any decimal number to other base.
+
+$$210_10$$ in base 2 is =       
+$$210_10$$ in base 4 is =       
+$$210_10$$ in base 3 is =       
+$$210_10$$ in base 5 is =       
+$$210_10$$ in base 8 is =       
+$$210_10$$ in base 16 is =       
+$$210_10$$ in base 32 is =       
+$$210_10$$ in base 64 is =       
+
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "GCD (Greatest Common Divisor)" practice pack. Follow the PDF file
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (GCD)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The GCD of [a] and [b] is    "
+    "The GCD of [a], [b], and [c] is    "
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The GCD of 18 and 24 is    
+    2. The GCD of 36 and 48 is    
+    3. The GCD of 12, 18, and 30 is    
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 6
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what GCD (Greatest Common Divisor) means.
+- Show two methods: Listing Factors and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for GCD, and common mistakes students make
+  (e.g., confusing GCD with LCM, or stopping too early
+  when listing factors).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on GCD problem types commonly seen in Math League
+  competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+"""
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Binary Conversion Master: Base 2 to All Bases"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Binary to Other Bases)**
+*   All questions must involve converting a binary number ($Base\ 2$) to a target base including **Base 3, 4, 5, 8, 10, and 16**[cite: 1].
+*   All questions must be of the form: "$[Number]_2$ in base [X] is = ____"[cite: 1].
+*   Include a balanced mix of difficulty levels[cite: 1]:
+    *   **Easy:** Binary to $Base\ 4$ or $Base\ 8$ (up to 6 bits)[cite: 1].
+    *   **Medium:** Binary to $Base\ 10$ (up to 8 bits)[cite: 1].
+    *   **Hard:** Binary to $Base\ 16$ (up to 12 bits) requiring use of letters A–F[cite: 1].
+    *   **Advanced:** Binary to non-power-of-2 bases ($Base\ 3$, $Base\ 5$)[cite: 1].
+*   Format each question exactly like this[cite: 1]:
+    1. $10110_2$ in base 4 is = ____[cite: 1]
+    2. $101110_2$ in base 16 is = ____[cite: 1]
+    3. $10110_2$ in base 3 is = ____[cite: 1]
+*   Do **NOT** repeat binary numbers[cite: 1].
+*   Do **NOT** create sequential patterns[cite: 1].
+*   Mix difficulty levels throughout[cite: 1].
+*   Provide a blank answer line between 2 columns[cite: 1].
+*   Split questions in 2 columns like (1 with 2, 3 with 4, etc.)[cite: 1].
+*   30 questions per table[cite: 1].
+
+**Part B — Answer Key**
+*   Provide all 240 answers in order[cite: 1].
+*   Format each answer exactly like this[cite: 1]:
+    1. 112[cite: 1]
+*   Split answers in 2 columns like (1 with 2, 3 with 4, etc.)[cite: 1].
+*   30 answers per table[cite: 1].
+
+**Part C — Explanation Section**
+*   Explain the positional value system of Binary[cite: 1].
+*   **Specific Focus on Hexadecimal ($Base\ 16$):** Define the values for letters **A (10), B (11), C (12), D (13), E (14), and F (15)**[cite: 1].
+*   Show three conversion methods[cite: 1]:
+    *   **Bit-Grouping (Direct Mapping):** For $Base\ 4$ (2 bits), $Base\ 8$ (3 bits), and $Base\ 16$ (4 bits)[cite: 1].
+    *   **Expansion Method:** For $Base\ 10$[cite: 1].
+    *   **Two-Step Conversion:** For $Base\ 3$ and $Base\ 5$ (convert to $Base\ 10$ first, then to the target base)[cite: 1].
+*   Provide 5 fully worked examples, including one that results in a Hexadecimal letter (e.g., $1011_2 = B_{16}$)[cite: 1].
+
+**Part D — Math League Teaching Strategy**
+*   Provide speed tips for "Bit-Grouping" to avoid manual calculation for $Base\ 4, 8,$ and $16$[cite: 1].
+*   Memorization list: Binary equivalents of $0–15$ to speed up Hexadecimal conversion[cite: 1].
+*   Identify common mistakes: Mixing up the values of D and E, or miscounting $n$ in the expansion method[cite: 1].
+*   Discuss "Trailing Zero" logic for bases that are powers of 2[cite: 1].
+
+**Part E — Teacher Notes**
+*   Provide one paragraph of coaching advice for contest preparation. Focus on how base conversion is a "speed-trap" topic—easy to solve but often time-consuming without the right shortcuts[cite: 1].
+
+**Output instructions:**
+*   After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+*   Clean, minimal styling — simple grid, no heavy color blocks[cite: 1].
+*   Questions run continuously with forced page breaks between sub-tables[cite: 1].
+*   Questions and Answer Key should have a forced page break between them[cite: 1].
+*   Answer key mirrors the same layout as the question tables[cite: 1].
+*   Answer key runs continuously without forced page breaks between sub-tables[cite: 1].
+*   Compile everything into a single downloadable PDF[cite: 1].
+
+"""
+
+
+"""
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Binary Conversion Master: Base 2 to All Bases"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Binary to Other Bases)**
+*   All questions must involve converting a binary number ($Base\ 2$) to a target base including **Base 3, 4, 5, 8, 10, and 16**[cite: 1].
+*   All questions must be of the form: "$[Number]_2$ in base [X] is = ____"[cite: 1].
+*   Include a balanced mix of difficulty levels[cite: 1]:
+    *   **Easy:** Binary to $Base\ 4$ or $Base\ 8$ (up to 6 bits)[cite: 1].
+    *   **Medium:** Binary to $Base\ 10$ (up to 8 bits)[cite: 1].
+    *   **Hard:** Binary to $Base\ 16$ (up to 12 bits) requiring use of letters A–F[cite: 1].
+    *   **Advanced:** Binary to non-power-of-2 bases ($Base\ 3$, $Base\ 5$)[cite: 1].
+*   Format each question exactly like this[cite: 1]:
+    1. $10110_2$ in base 4 is = ____[cite: 1]
+    2. $101110_2$ in base 16 is = ____[cite: 1]
+    3. $10110_2$ in base 3 is = ____[cite: 1]
+*   Do **NOT** repeat binary numbers[cite: 1].
+*   Do **NOT** create sequential patterns[cite: 1].
+*   Mix difficulty levels throughout[cite: 1].
+*   Provide a blank answer line between 2 columns[cite: 1].
+*   Split questions in 2 columns like (1 with 2, 3 with 4, etc.)[cite: 1].
+*   30 questions per table[cite: 1].
+
+**Part B — Answer Key**
+*   Provide all 240 answers in order[cite: 1].
+*   Format each answer exactly like this[cite: 1]:
+    1. 112[cite: 1]
+*   Split answers in 2 columns like (1 with 2, 3 with 4, etc.)[cite: 1].
+*   30 answers per table[cite: 1].
+
+**Part C — Explanation Section**
+*   Explain the positional value system of Binary[cite: 1].
+*   **Specific Focus on Hexadecimal ($Base\ 16$):** Define the values for letters **A (10), B (11), C (12), D (13), E (14), and F (15)**[cite: 1].
+*   Show three conversion methods[cite: 1]:
+    *   **Bit-Grouping (Direct Mapping):** For $Base\ 4$ (2 bits), $Base\ 8$ (3 bits), and $Base\ 16$ (4 bits)[cite: 1].
+    *   **Expansion Method:** For $Base\ 10$[cite: 1].
+    *   **Two-Step Conversion:** For $Base\ 3$ and $Base\ 5$ (convert to $Base\ 10$ first, then to the target base)[cite: 1].
+*   Provide 5 fully worked examples, including one that results in a Hexadecimal letter (e.g., $1011_2 = B_{16}$)[cite: 1].
+
+**Part D — Math League Teaching Strategy**
+*   Provide speed tips for "Bit-Grouping" to avoid manual calculation for $Base\ 4, 8,$ and $16$[cite: 1].
+*   Memorization list: Binary equivalents of $0–15$ to speed up Hexadecimal conversion[cite: 1].
+*   Identify common mistakes: Mixing up the values of D and E, or miscounting $n$ in the expansion method[cite: 1].
+*   Discuss "Trailing Zero" logic for bases that are powers of 2[cite: 1].
+
+**Part E — Teacher Notes**
+*   Provide one paragraph of coaching advice for contest preparation. Focus on how base conversion is a "speed-trap" topic—easy to solve but often time-consuming without the right shortcuts[cite: 1].
+
+**Output instructions:**
+*   After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+*   Clean, minimal styling — simple grid, no heavy color blocks[cite: 1].
+*   Questions run continuously with forced page breaks between sub-tables[cite: 1].
+*   Questions and Answer Key should have a forced page break between them[cite: 1].
+*   Answer key mirrors the same layout as the question tables[cite: 1].
+*   Answer key runs continuously without forced page breaks between sub-tables[cite: 1].
+*   Compile everything into a single downloadable PDF[cite: 1].
+
+"""
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Base Conversion to Binary (Base 2)"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Base Conversion)**
+- Use a variety of starting bases including $Base\ 3, 4, 5, 6, 7, 8, 10,$ and $16$.
+- **All questions MUST use subscript notation for the starting base.**
+- All questions must be of the form: "$[Number]_{[Base]}$ in base 2 is =     "
+- Include a balanced mix of difficulty levels:
+    - **Easy:** $Base\ 4$ and $Base\ 8$ to $Base\ 2$ (direct mapping), numbers under $64_{10}$.
+    - **Medium:** $Base\ 10$ to $Base\ 2$ (numbers under $128_{10}$).
+    - **Hard:** $Base\ 16$ to $Base\ 2$ (4-bit mapping) and $Base\ 10$ numbers up to $512_{10}$.
+    - **Advanced:** Non-power-of-2 bases (e.g., $121_3$ or $44_5$) to $Base\ 2$.
+- Format each question exactly like this:
+    1. $171_8$ in base 2 is =     
+    2. $171_4$ in base 2 is =     
+    3. $2F_{16}$ in base 2 is =     
+- Do **NOT** repeat starting values or base pairings.
+- Do **NOT** create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in pure binary format (Base 2).
+- Format each answer exactly like this: 1. 1111001
+- Split answers in 2 columns.
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Define **Base 2 (Binary)** and explain the positional value system.
+- Show two conversion methods: **Successive Division by 2** (for Base 10) and **Direct Bit-Mapping** (for bases 4, 8, and 16).
+- Explain why $Number_{Base}$ notation is used to distinguish values from decimal.
+- Provide 5 fully worked examples, including one conversion from $Base\ 16$ to $Base\ 2$.
+
+**Part D — Math League Teaching Strategy**
+- Provide speed tips for recognizing common binary powers ($2^{10} = 1024$).
+- Explain the **"Bit-Chunking"** shortcut for Octal (3 bits) and Hex (4 bits).
+- Identify common mistakes, such as miscalculating remainders or omitting placeholder zeros in middle bit-groups.
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation. Focus on the importance of mental speed for binary conversion in the Number Sense round.
+
+**Output instructions:**
+- Compile everything into a single downloadable PDF format[cite: 1].
+- Clean, minimal styling—simple grid, no heavy color blocks[cite: 1].
+- Questions run continuously with forced page breaks between sub-tables[cite: 1].
+- Questions and Answer Key should have a forced page break between them[cite: 1].
+- Answer key mirrors the same layout as the question tables[cite: 1].
+- Answer key runs continuously without forced page breaks between sub-tables[cite: 1].
+- Compile everything into a single downloadable PDF[cite: 1].
+
+"""
+
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Base Conversion to Binary (Base 2)"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Base Conversion)**
+- Use a variety of starting bases including $Base\ 3, 4, 5, 8, 10,$ and $16$.
+- **All questions MUST use subscript notation for the starting base.**
+- All questions must be of the form: "$[Number]_{[Base]}$ in base 2 is =     "
+- Include a balanced mix of difficulty levels:
+    - **Easy:** $Base\ 4$ and $Base\ 8$ to $Base\ 2$ (direct mapping), numbers under $64_{10}$.
+    - **Medium:** $Base\ 10$ to $Base\ 2$ (numbers under $128_{10}$).
+    - **Hard:** $Base\ 16$ to $Base\ 2$ (4-bit mapping) and $Base\ 10$ numbers up to $512_{10}$.
+    - **Advanced:** Non-power-of-2 bases (e.g., $121_3$ or $44_5$) to $Base\ 2$.
+- Format each question exactly like this:
+    1. $171_8$ in base 2 is =     
+    2. $171_4$ in base 2 is =     
+    3. $2F_{16}$ in base 2 is =     
+- Do **NOT** repeat starting values or base pairings.
+- Do **NOT** create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in pure binary format (Base 2).
+- Format each answer exactly like this: 1. 1111001
+- Split answers in 2 columns.
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Define **Base 2 (Binary)** and explain the positional value system.
+- Show two conversion methods: **Successive Division by 2** (for Base 10) and **Direct Bit-Mapping** (for bases 4, 8, and 16).
+- Explain why $Number_{Base}$ notation is used to distinguish values from decimal.
+- Provide 5 fully worked examples, including one conversion from $Base\ 16$ to $Base\ 2$.
+
+**Part D — Math League Teaching Strategy**
+- Provide speed tips for recognizing common binary powers ($2^{10} = 1024$).
+- Explain the **"Bit-Chunking"** shortcut for Octal (3 bits) and Hex (4 bits).
+- Identify common mistakes, such as miscalculating remainders or omitting placeholder zeros in middle bit-groups.
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation. Focus on the importance of mental speed for binary conversion in the Number Sense round.
+
+**Output instructions:**
+- Compile everything into a single downloadable PDF format[cite: 1].
+- Clean, minimal styling—simple grid, no heavy color blocks[cite: 1].
+- Questions run continuously with forced page breaks between sub-tables[cite: 1].
+- Questions and Answer Key should have a forced page break between them[cite: 1].
+- Answer key mirrors the same layout as the question tables[cite: 1].
+- Answer key runs continuously without forced page breaks between sub-tables[cite: 1].
+- Compile everything into a single downloadable PDF[cite: 1].
+
+"""
+
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Base Conversion to Binary (Base 2)"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Base Conversion)**
+- Use a variety of starting bases including $Base\ 3, 4, 5, 8, 10,$ and $16$.
+- **All questions MUST use subscript notation for the starting base.**
+- All questions must be of the form: "$[Number]_{[Base]}$ in base 2 is = ____"
+- Include a balanced mix of difficulty levels:
+    - **Easy:** $Base\ 4$ and $Base\ 8$ to $Base\ 2$ (direct mapping), numbers under $64_{10}$.
+    - **Medium:** $Base\ 10$ to $Base\ 2$ (numbers under $128_{10}$).
+    - **Hard:** $Base\ 16$ to $Base\ 2$ (4-bit mapping) and $Base\ 10$ numbers up to $512_{10}$.
+    - **Advanced:** Non-power-of-2 bases (e.g., $121_3$ or $44_5$) to $Base\ 2$.
+- Format each question exactly like this:
+    1. $171_8$ in base 2 is = ____
+    2. $171_4$ in base 2 is = ____
+    3. $2F_{16}$ in base 2 is = ____
+- Do **NOT** repeat starting values or base pairings.
+- Do **NOT** create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in pure binary format (Base 2).
+- Format each answer exactly like this: 1. 1111001
+- Split answers in 2 columns.
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Define **Base 2 (Binary)** and explain the positional value system.
+- Show two conversion methods: **Successive Division by 2** (for Base 10) and **Direct Bit-Mapping** (for bases 4, 8, and 16).
+- Explain why $Number_{Base}$ notation is used to distinguish values from decimal.
+- Provide 5 fully worked examples, including one conversion from $Base\ 16$ to $Base\ 2$.
+
+**Part D — Math League Teaching Strategy**
+- Provide speed tips for recognizing common binary powers ($2^{10} = 1024$).
+- Explain the **"Bit-Chunking"** shortcut for Octal (3 bits) and Hex (4 bits).
+- Identify common mistakes, such as miscalculating remainders or omitting placeholder zeros in middle bit-groups.
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation. Focus on the importance of mental speed for binary conversion in the Number Sense round.
+
+**Output instructions:**
+- Compile everything into a single downloadable PDF format[cite: 1].
+- Clean, minimal styling—simple grid, no heavy color blocks[cite: 1].
+- Questions run continuously with forced page breaks between sub-tables[cite: 1].
+- Questions and Answer Key should have a forced page break between them[cite: 1].
+- Answer key mirrors the same layout as the question tables[cite: 1].
+- Answer key runs continuously without forced page breaks between sub-tables[cite: 1].
+- Compile everything into a single downloadable PDF[cite: 1].
+
+"""
+
+
+"""
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Base Conversion to Binary (Base 2)"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Base Conversion to Base 2)**
+- Use a variety of starting bases (Base 4, 8, 10, and 16).
+- All questions must be of the form:
+    "[Number] base [X] in base 2 is = ____"
+- Include a balanced mix of difficulty levels:
+    - **Easy:** Base 4 or Base 8 to Base 2 (direct mapping of 2 or 3 binary digits).
+    - **Medium:** Base 10 to Base 2 (numbers under 128).
+    - **Hard:** Base 16 to Base 2 (direct mapping of 4 binary digits) or Base 10 numbers up to 512.
+    - **Advanced:** Base 3 or Base 5 to Base 2 (requiring a two-step conversion through Base 10).
+- Format each question exactly like this:
+    1. 171 base 8 in base 2 is = ____
+    2. 63 base 8 in base 2 is = ____
+    3. 4F base 16 in base 2 is = ____
+- Do **NOT** repeat numbers or base pairings.
+- Do **NOT** create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in binary format.
+- Format each answer exactly like this:
+    1. 1111001
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Explain what "Base 2" (Binary) means and its significance in mathematics.
+- Show two methods: **Direct Grouping/Mapping** (for bases that are powers of 2) and the **Successive Division/Remainder Method** (for Base 10).
+- Explain why direct mapping works for bases like 8 and 16.
+- Provide 5 fully worked examples, including one conversion from Base 16 to Base 2.
+
+**Part D — Math League Teaching Strategy**
+- Provide speed tips, such as memorizing the binary equivalents of 0–15.
+- Pattern recognition strategies for identifying odd/even numbers in binary.
+- Mental-math shortcuts for converting Octal (Base 8) to Binary by using 3-bit "chunks."
+- List common mistakes students make (e.g., forgetting leading zeros in middle chunks or miscalculating remainders).
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation focused on base conversion problem types commonly seen in Math League Number Sense rounds, where speed and direct mapping are essential.
+
+**Output instructions:**
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+
+"""
+
+
+
+"""
+
+for the given question: 
+""" 
+Convert any number with any base to base 2.
+
+$$171_8$$ in base 2 is =       
+$$171_4$$ in base 2 is =       
+$$63_8$$ in base 2 is =       
+
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "GCD (Greatest Common Divisor)" practice pack. Follow the PDF file
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (GCD)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The GCD of [a] and [b] is    "
+    "The GCD of [a], [b], and [c] is    "
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The GCD of 18 and 24 is    
+    2. The GCD of 36 and 48 is    
+    3. The GCD of 12, 18, and 30 is    
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 6
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what GCD (Greatest Common Divisor) means.
+- Show two methods: Listing Factors and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for GCD, and common mistakes students make
+  (e.g., confusing GCD with LCM, or stopping too early
+  when listing factors).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on GCD problem types commonly seen in Math League
+  competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+"""
+
+
+
+"""
+
+for the given question: 
+""" 
+Convert any number with any base to base 2.
+
+171 base 8 in base 2 is =       
+171 base 8 in base 2 is =       
+63 base 8 in base 2 is =       
+
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "GCD (Greatest Common Divisor)" practice pack. Follow the PDF file
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (GCD)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The GCD of [a] and [b] is    "
+    "The GCD of [a], [b], and [c] is    "
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The GCD of 18 and 24 is    
+    2. The GCD of 36 and 48 is    
+    3. The GCD of 12, 18, and 30 is    
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 6
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what GCD (Greatest Common Divisor) means.
+- Show two methods: Listing Factors and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for GCD, and common mistakes students make
+  (e.g., confusing GCD with LCM, or stopping too early
+  when listing factors).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on GCD problem types commonly seen in Math League
+  competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+"""
+
+
+--------------------
+
+Remainders
+
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Division Remainders & Number Sense"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Remainders)**
+- All questions must involve finding the remainder of a division problem.
+- All questions must be of the form: "The remainder of [dividend] / [divisor] is ____"
+- Include a balanced mix of difficulty levels:
+    - **Easy:** Dividends under 1,000 with divisors 2, 5, or 10.
+    - **Medium:** Dividends under 2,000 with divisors 3, 4, 8, or 9.
+    - **Hard:** Dividends up to 10,000 with divisors **25 or 11**.
+    - **Advanced:** Dividends up to 10,000 with the divisor **75**.
+- Format each question exactly like this:
+    1. The remainder of 3287 / 11 is ____
+    2. The remainder of 5437 / 25 is ____
+    3. The remainder of 8126 / 75 is ____
+- Do **NOT** repeat division pairs.
+- Do **NOT** create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in order.
+- Format each answer exactly like this: 1. 9
+- Split answers in 2 columns.
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Define the remainder as the "leftover" after integer division.
+- Show three methods:
+    1. **Standard Long Division.**
+    2. **Last Digit/Last Two Digits Shortcut:** For 2, 5, 10, 25, and 100.
+    3. **Sum of Digits/Alternating Sum:** For 3, 9, and 11.
+- Provide 5 fully worked examples, specifically demonstrating how to find a remainder for **75** by looking at the remainder of the last two digits divided by 25 and then adjusting.
+
+**Part D — Math League Teaching Strategy**
+- **Trick for 25:** Only the last two digits matter (e.g., $...87 / 25$ is the same as $87 / 25$).
+- **Trick for 75:** Explain the "Chunking" method—subtracting the nearest multiple of 300 or 150 to quickly narrow down the remainder.
+- **Shortcut for 11:** Use the alternating sum of digits.
+- List common mistakes, such as forgetting that a remainder must be less than the divisor.
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation focused on how remainder problems are "free points" in the Number Sense round if these rules are memorized.
+
+**Output instructions:**
+- Compile everything into a single downloadable PDF format[cite: 1].
+- Clean, minimal styling—simple grid, no heavy color blocks[cite: 1].
+- Questions run continuously with forced page breaks between sub-tables[cite: 1].
+- Questions and Answer Key should have a forced page break between them[cite: 1].
+- Answer key mirrors the same layout as the question tables[cite: 1].
+- Answer key runs continuously without forced page breaks between sub-tables[cite: 1].
+- Compile everything into a single downloadable PDF[cite: 1].
+
+"""
+
+
+"""
+
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Division Remainders"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Remainders)**
+- All questions must involve finding the remainder of a division problem.
+- All questions must be of the form:
+    "The remainder of [dividend] / [divisor] is     "
+- Include a balanced mix of difficulty levels:
+    - **Easy:** Dividends under 500 with divisors 2, 5, or 10.
+    - **Medium:** Dividends under 2,000 with divisors 3, 4, or 9 (focusing on basic divisibility rules).
+    - **Hard:** Dividends up to 10,000 with divisors 6, 7, 8, or 12.
+    - **Advanced:** Dividends up to 10,000 specifically using the divisor **11** (requiring alternating sum rules).
+- Format each question exactly like this:
+    1. The remainder of 3287 / 11 is     
+    2. The remainder of 872 / 5 is     
+    3. The remainder of 5437 / 4 is     
+- Do **NOT** repeat division pairs.
+- Do **NOT** create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 9
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Explain what a **Remainder** represents in division.
+- Show two methods: **Standard Long Division** and **Divisibility Rules** (specifically for 3, 4, 9, and 11).
+- Explain why these divisibility shortcuts yield the same remainder as long division.
+- Provide 5 fully worked examples, including one with a divisor of 11.
+
+**Part D — Math League Teaching Strategy**
+- Provide speed tips for remainders of 5 and 10 (looking at the last digit).
+- Pattern recognition strategies for remainders of 4 (looking at the last two digits).
+- The "Alternating Sum" shortcut for the divisor 11.
+- List common mistakes students make (e.g., getting a remainder larger than the divisor).
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation focused on remainder problems commonly seen in Math League competitions, particularly how they appear in the Number Sense and Sprint rounds.
+
+**Output instructions:**
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+
+"""
+
+
+
+"""
+
+for the given question: 
+""" 
+The reminder of 3287 / 11 =       
+The reminder of 872 / 5 =       
+The reminder of 5437 / 4 =       
+The reminder of 87 / 5 =       
+The reminder of 126 / 6 =       
+
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "GCD (Greatest Common Divisor)" practice pack. Follow the PDF file
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (GCD)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The GCD of [a] and [b] is    "
+    "The GCD of [a], [b], and [c] is    "
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The GCD of 18 and 24 is    
+    2. The GCD of 36 and 48 is    
+    3. The GCD of 12, 18, and 30 is    
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 6
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what GCD (Greatest Common Divisor) means.
+- Show two methods: Listing Factors and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for GCD, and common mistakes students make
+  (e.g., confusing GCD with LCM, or stopping too early
+  when listing factors).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on GCD problem types commonly seen in Math League
+  competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+"""
+
+--------------------------
+
+Sum of Arithmetic Sequences
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Arithmetic Series Mastery"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Arithmetic Series)**
+- Use only finite arithmetic sequences of whole numbers.
+- **Mix two question formats throughout the set:**
+    1. "The sum of the terms of the arithmetic sequence [a], [b], [c],..., [z] is     "
+    2. "The sum of the first [n] terms of the arithmetic sequence [a], [b], [c], ... is     "
+- Include a balanced mix of difficulty levels:
+    - **Easy:** 5–10 terms, common difference between 1–5, all terms < 50.
+    - **Medium:** 11–20 terms, common difference between 6–12, involving the "first $n$ terms" format.
+    - **Hard:** 20–40 terms, terms up to 500, requiring students to calculate $a_n$ or $n$ first.
+    - **Advanced:** Sequences with large starting values (e.g., 100+) or negative common differences.
+- Format each question exactly like this:
+    1. The sum of the terms of the arithmetic sequence 4, 9, 14,..., 64 is     
+    2. The sum of the first 12 terms of the arithmetic sequence 9, 16, 23, ... is     
+- Do **NOT** repeat sequences.
+- Do **NOT** create sequential patterns between questions.
+- Mix formats and difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 442
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Define **Arithmetic Sequence** (the list) vs. **Arithmetic Series** (the sum).
+- Show the two primary formulas:
+    - When the last term is known: $S_n = \frac{n(a_1 + a_n)}{2}$
+    - When the number of terms is known: $S_n = \frac{n}{2}[2a_1 + (n - 1)d]$
+- Explain the logic behind "First + Last" pairing.
+- Provide 5 fully worked examples, alternating between both question formats.
+
+**Part D — Math League Teaching Strategy**
+- Provide speed tips for finding the **median** of a sequence to multiply by $n$.
+- Shortcuts for finding $n$ quickly: $\frac{\text{Last} - \text{First}}{\text{Difference}} + 1$.
+- Identify common pitfalls, such as using $n-1$ instead of $n$ in the sum formula.
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation. Focus on how Math League often uses these series to test "mental endurance" in the Sprint round and accuracy in the Target round.
+
+**Output instructions:**
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+
+"""
+
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Sum of Arithmetic Sequences"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Arithmetic Series)**
+- Use only finite arithmetic sequences of whole numbers.
+- All questions must be of the form:
+    "The sum of the terms of the arithmetic sequence [a], [b], [c],..., [z] is     "
+- Include a balanced mix of difficulty levels:
+    - **Easy:** 5–8 terms, common difference between 1–5, first term < 10.
+    - **Medium:** 9–15 terms, common difference between 4–10, terms under 100.
+    - **Hard:** 16–30 terms, terms up to 250, may include negative common differences.
+    - **Advanced:** Sequences where students must first solve for the number of terms ($n$) using terms between 10–500.
+- Format each question exactly like this:
+    1. The sum of the terms of the arithmetic sequence 4, 9, 14,..., 64 is     
+    2. The sum of the terms of the arithmetic sequence 9, 16, 23,..., 58 is     
+- Do **NOT** repeat sequences.
+- Do **NOT** create sequential patterns between questions.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 442
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Explain what an Arithmetic Sequence and an Arithmetic Series are.
+- Show two methods: The "Pairing" Method (Gauss's approach) and the Standard Formula $S_n = \frac{n(a_1 + a_n)}{2}$.
+- Explain how to find the number of terms ($n$) when it is not provided.
+- Provide 5 fully worked examples, including one with a negative common difference.
+
+**Part D — Math League Teaching Strategy**
+- Provide speed tips for finding the middle term (median) as a shortcut.
+- Discuss pattern recognition for common differences.
+- List common mistakes students make (e.g., miscounting $n$ by being "off by one," or adding the common difference incorrectly).
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation focused on Arithmetic Series problem types commonly seen in Math League competitions, specifically highlighting their appearance in the Sprint Round.
+
+**Output instructions:**
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+"""
+
+To include sequences where the number of terms is specified rather than the final value, here is the updated prompt. This version incorporates both formats into the practice pack structure to ensure students are prepared for both ways these problems appear in competition[cite: 1].
+
+---
+
+### Updated Generated Prompt
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Arithmetic Series Mastery"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Arithmetic Series)**
+- Use only finite arithmetic sequences of whole numbers.
+- **Mix two question formats throughout the set:**
+    1. "The sum of the terms of the arithmetic sequence [a], [b], [c],..., [z] is ____"
+    2. "The sum of the first [n] terms of the arithmetic sequence [a], [b], [c], ... is ____"
+- Include a balanced mix of difficulty levels:
+    - **Easy:** 5–10 terms, common difference between 1–5, all terms < 50.
+    - **Medium:** 11–20 terms, common difference between 6–12, involving the "first $n$ terms" format.
+    - **Hard:** 20–40 terms, terms up to 500, requiring students to calculate $a_n$ or $n$ first.
+    - **Advanced:** Sequences with large starting values (e.g., 100+) or negative common differences.
+- Format each question exactly like this:
+    1. The sum of the terms of the arithmetic sequence 4, 9, 14,..., 64 is ____
+    2. The sum of the first 12 terms of the arithmetic sequence 9, 16, 23, ... is ____
+- Do **NOT** repeat sequences.
+- Do **NOT** create sequential patterns between questions.
+- Mix formats and difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 442
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Define **Arithmetic Sequence** (the list) vs. **Arithmetic Series** (the sum).
+- Show the two primary formulas:
+    - When the last term is known: $S_n = \frac{n(a_1 + a_n)}{2}$
+    - When the number of terms is known: $S_n = \frac{n}{2}[2a_1 + (n - 1)d]$
+- Explain the logic behind "First + Last" pairing.
+- Provide 5 fully worked examples, alternating between both question formats.
+
+**Part D — Math League Teaching Strategy**
+- Provide speed tips for finding the **median** of a sequence to multiply by $n$.
+- Shortcuts for finding $n$ quickly: $\frac{\text{Last} - \text{First}}{\text{Difference}} + 1$.
+- Identify common pitfalls, such as using $n-1$ instead of $n$ in the sum formula.
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation. Focus on how Math League often uses these series to test "mental endurance" in the Sprint round and accuracy in the Target round.
+
+**Output instructions:**
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+---
+
+Would you like to add a specific section on "Mean-Median" relationships for these series, or does this cover the "missing last number" requirement?
+
+"""
+
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Sum of Arithmetic Sequences"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Arithmetic Series)**
+- Use only finite arithmetic sequences of whole numbers.
+- All questions must be of the form:
+    "The sum of the terms of the arithmetic sequence [a], [b], [c],..., [z] is ____"
+- Include a balanced mix of difficulty levels:
+    - **Easy:** 5–8 terms, common difference between 1–5, first term < 10.
+    - **Medium:** 9–15 terms, common difference between 4–10, terms under 100.
+    - **Hard:** 16–30 terms, terms up to 250, may include negative common differences.
+    - **Advanced:** Sequences where students must first solve for the number of terms ($n$) using terms between 10–500.
+- Format each question exactly like this:
+    1. The sum of the terms of the arithmetic sequence 4, 9, 14,..., 64 is ____
+    2. The sum of the terms of the arithmetic sequence 9, 16, 23,..., 58 is ____
+- Do **NOT** repeat sequences.
+- Do **NOT** create sequential patterns between questions.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 questions per table.
+
+**Part B — Answer Key**
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 442
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+**Part C — Explanation Section**
+- Explain what an Arithmetic Sequence and an Arithmetic Series are.
+- Show two methods: The "Pairing" Method (Gauss's approach) and the Standard Formula $S_n = \frac{n(a_1 + a_n)}{2}$.
+- Explain how to find the number of terms ($n$) when it is not provided.
+- Provide 5 fully worked examples, including one with a negative common difference.
+
+**Part D — Math League Teaching Strategy**
+- Provide speed tips for finding the middle term (median) as a shortcut.
+- Discuss pattern recognition for common differences.
+- List common mistakes students make (e.g., miscounting $n$ by being "off by one," or adding the common difference incorrectly).
+
+**Part E — Teacher Notes**
+- Provide one paragraph of coaching advice for contest preparation focused on Arithmetic Series problem types commonly seen in Math League competitions, specifically highlighting their appearance in the Sprint Round.
+
+**Output instructions:**
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+
+"""
+
+
+for the given question: 
+""" 
+The sum of the terms of the arithmetic sequence 4, 9, 14,..., 64  is   
+The sum of the terms of the arithmetic sequence 9, 16, 23,..., 58  is   
+
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "GCD (Greatest Common Divisor)" practice pack. Follow the PDF file
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (GCD)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The GCD of [a] and [b] is    "
+    "The GCD of [a], [b], and [c] is    "
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The GCD of 18 and 24 is    
+    2. The GCD of 36 and 48 is    
+    3. The GCD of 12, 18, and 30 is    
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 6
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what GCD (Greatest Common Divisor) means.
+- Show two methods: Listing Factors and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for GCD, and common mistakes students make
+  (e.g., confusing GCD with LCM, or stopping too early
+  when listing factors).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on GCD problem types commonly seen in Math League
+  competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+------------------
+
+
+Roman to Arabic
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Roman Numerals to Arabic Numerals"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Roman to Arabic)**
+*   All questions must involve converting a Roman numeral to its Arabic equivalent.
+*   All questions must be of the form:
+    *   "[Roman Numeral] in Arabic numeral is    "
+*   Include a balanced mix of difficulty levels:
+    *   **Easy:** Numbers between 1–50 (using I, V, X, L).
+    *   **Medium:** Numbers between 50–500 (using L, C, D).
+    *   **Hard:** Numbers between 500–1,500 (using D, M).
+    *   **Advanced:** Numbers between 1,500–3,999 (complex subtraction rules).
+*   Format each question exactly like this:
+    1.  **DXXXIX** in Arabic numeral is    
+    2.  **CCCLXIV** in Arabic numeral is    
+    3.  **MCMLXXXIV** in Arabic numeral is    
+*   Do **NOT** repeat Roman numerals.
+*   Do **NOT** create sequential patterns (e.g., IX, X, XI).
+*   Mix difficulty levels throughout.
+*   Provide a blank answer line between 2 columns.
+*   Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+*   30 questions per table.
+
+**Part B — Answer Key**
+*   Provide all 240 answers in order.
+*   Format each answer exactly like this:
+    1.  539
+*   Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+*   30 answers per table.
+
+**Part C — Explanation Section**
+*   Explain the basic symbols (I, V, X, L, C, D, M).
+*   Explain the **Additive Rule** and the **Subtractive Rule** (e.g., IV vs. VI).
+*   Explain why certain combinations (like IIII or VX) are invalid.
+*   Provide 5 fully worked examples, including one larger number like 3,888.
+
+**Part D — Math League Teaching Strategy**
+*   Provide speed tips for "chunking" large numerals (breaking M CM L XXX IV into components).
+*   Identify common mistakes students make (e.g., forgetting the subtractive rule or misidentifying L and C).
+*   Provide mental-math shortcuts for adding Roman numerals without converting to Arabic first.
+
+**Part E — Teacher Notes**
+*   Provide one paragraph of coaching advice for contest preparation focused on Roman numeral problem types commonly seen in the Math League Sprint and Target rounds.
+
+**Output instructions:**
+*   After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+*   Clean, minimal styling — simple grid, no heavy color blocks.
+*   Questions run continuously with forced page breaks between sub-tables.
+*   Questions and Answer Key should have a forced page break between them.
+*   Answer key mirrors the same layout as the question tables.
+*   Answer key runs continuously without forced page breaks between sub-tables.
+*   Compile everything into a single downloadable PDF.
+
+"""
+
+"""
+
+As a math teacher who writes **MathLeague.org** practice materials, create a complete **"Roman Numerals to Arabic Numerals"** practice pack. Follow the PDF file structure provided[cite: 1]. Follow this exact structure:
+
+**Part A — 240 Practice Questions (Roman to Arabic)**
+*   All questions must involve converting a Roman numeral to its Arabic equivalent.
+*   All questions must be of the form:
+    *   "[Roman Numeral] in Arabic numeral is ____"
+*   Include a balanced mix of difficulty levels:
+    *   **Easy:** Numbers between 1–50 (using I, V, X, L).
+    *   **Medium:** Numbers between 50–500 (using L, C, D).
+    *   **Hard:** Numbers between 500–1,500 (using D, M).
+    *   **Advanced:** Numbers between 1,500–3,999 (complex subtraction rules).
+*   Format each question exactly like this:
+    1.  **DXXXIX** in Arabic numeral is ____
+    2.  **CCCLXIV** in Arabic numeral is ____
+    3.  **MCMLXXXIV** in Arabic numeral is ____
+*   Do **NOT** repeat Roman numerals.
+*   Do **NOT** create sequential patterns (e.g., IX, X, XI).
+*   Mix difficulty levels throughout.
+*   Provide a blank answer line between 2 columns.
+*   Split questions in 2 columns like (1 with 2, 3 with 4, etc.).
+*   30 questions per table.
+
+**Part B — Answer Key**
+*   Provide all 240 answers in order.
+*   Format each answer exactly like this:
+    1.  539
+*   Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+*   30 answers per table.
+
+**Part C — Explanation Section**
+*   Explain the basic symbols (I, V, X, L, C, D, M).
+*   Explain the **Additive Rule** and the **Subtractive Rule** (e.g., IV vs. VI).
+*   Explain why certain combinations (like IIII or VX) are invalid.
+*   Provide 5 fully worked examples, including one larger number like 3,888.
+
+**Part D — Math League Teaching Strategy**
+*   Provide speed tips for "chunking" large numerals (breaking M CM L XXX IV into components).
+*   Identify common mistakes students make (e.g., forgetting the subtractive rule or misidentifying L and C).
+*   Provide mental-math shortcuts for adding Roman numerals without converting to Arabic first.
+
+**Part E — Teacher Notes**
+*   Provide one paragraph of coaching advice for contest preparation focused on Roman numeral problem types commonly seen in the Math League Sprint and Target rounds.
+
+**Output instructions:**
+*   After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor)[cite: 1].
+*   Clean, minimal styling — simple grid, no heavy color blocks.
+*   Questions run continuously with forced page breaks between sub-tables.
+*   Questions and Answer Key should have a forced page break between them.
+*   Answer key mirrors the same layout as the question tables.
+*   Answer key runs continuously without forced page breaks between sub-tables.
+*   Compile everything into a single downloadable PDF.
+
+
+
+"""
+
+
+for the given question: 
+""" 
+DXXXIX in arabic numerral is   
+CCCLXIV in arabic numerral is  
+
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "GCD (Greatest Common Divisor)" practice pack. Follow the PDF file
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (GCD)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The GCD of [a] and [b] is    "
+    "The GCD of [a], [b], and [c] is    "
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The GCD of 18 and 24 is    
+    2. The GCD of 36 and 48 is    
+    3. The GCD of 12, 18, and 30 is    
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 6
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what GCD (Greatest Common Divisor) means.
+- Show two methods: Listing Factors and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for GCD, and common mistakes students make
+  (e.g., confusing GCD with LCM, or stopping too early
+  when listing factors).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on GCD problem types commonly seen in Math League
+  competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+--------------------------------
+
+Estimation
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "Estimation" practice pack. Follow the PDF file structure provided.
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Estimation)
+- Use a balanced mix of the following 14 estimation question types:
+
+    Type 1  — Addition & Subtraction:
+        (estimate) [a] + [b] - [c]
+        e.g. (estimate) 1385 + 1289 - 679
+
+    Type 2  — Two-Factor Multiplication:
+        (estimate) [a] × [b]
+        e.g. (estimate) 209 × 499
+
+    Type 3  — Three-Factor Multiplication:
+        (estimate) [a] × [b] × [c]
+        e.g. (estimate) 39 × 49 × 43
+
+    Type 4  — Near-Fraction Multiplication:
+        (estimate) [digit] × [near-unit-fraction number]
+        e.g. (estimate) 9 × 428571
+
+    Type 5  — Division:
+        (estimate) [large number] ÷ [number]
+        e.g. (estimate) 849512 ÷ 169
+
+    Type 6  — Square Root:
+        (estimate) √[large number]
+        e.g. (estimate) √824892
+
+    Type 7  — Two-Factor Multiplication (mixed size):
+        (estimate) [a] × [b]
+        e.g. (estimate) 667 × 81
+
+    Type 8  — Decimal Power:
+        (estimate) [decimal] ^ [small whole number]
+        e.g. (estimate) 3.1 ^ 4
+
+    Type 9  — Small Base Square:
+        (estimate) [a] ^ 2
+        e.g. (estimate) 333 ^ 2
+
+    Type 10 — Small Base Higher Power:
+        (estimate) [a] ^ [n≥3]
+        e.g. (estimate) 333 ^ 4
+
+    Type 11 — Circle Area with Radical Radius:
+        (estimate) the area of a circle with radius [a√b] is ___
+        e.g. (estimate) the area of a circle with radius 4√2 is ___
+
+    Type 12 — Cube Root:
+        (estimate) ∛[large number]
+        e.g. (estimate) ∛824892
+
+    Type 13 — Product of Square Roots Divided by Power of 10:
+        (estimate) (√[a] × √[b]) ÷ 10^[n]
+        e.g. (estimate) (√43 × √47) ÷ 10^4
+
+    Type 14 — Product of Squares Divided by Power of 10:
+        (estimate) ([a]^2 × [b]^2) ÷ 10^[n]
+        e.g. (estimate) (43^2 × 47^2) ÷ 10^4
+
+- Distribute all 14 types as evenly as possible across 240 questions
+  (approximately 17 questions per type).
+- Include a balanced mix of difficulty levels:
+    - Easy: small numbers, straightforward rounding
+    - Medium: multi-step rounding required
+    - Hard: large numbers, decimals, or nested operations
+    - Advanced: combinations requiring multiple estimation strategies
+- Format each question exactly like this:
+    1.  (estimate) 1385 + 1289 - 679 =    
+    2.  (estimate) 209 × 499 =    
+    3.  (estimate) 39 × 49 × 43 =    
+    4.  (estimate) 9 × 428571 =    
+    5.  (estimate) 849512 ÷ 169 =    
+    6.  (estimate) √824892 =    
+    7.  (estimate) 667 × 81 =    
+    8.  (estimate) 3.1 ^ 4 =    
+    9.  (estimate) 333 ^ 2 =    
+    10. (estimate) 333 ^ 4 =    
+    11. (estimate) the area of a circle with radius 4√2 is    
+    12. (estimate) ∛824892 =    
+    13. (estimate) (√43 × √47) ÷ 10^4 =    
+    14. (estimate) (43^2 × 47^2) ÷ 10^4 =    
+- Do NOT repeat the same numbers.
+- Do NOT create sequential patterns.
+- Mix question types and difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Each answer must show the estimated value and acceptable range:
+    1. ≈ 2000  (acceptable range: 1900–2100)
+- Format each answer exactly like this:
+    1. ≈ {Estimated Answer}  (acceptable: {low}–{high})
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what mathematical estimation means in a contest context.
+- Show the core strategy for each of the 14 question types:
+    Type 1  — Round each term to leading digit before
+                adding/subtracting.
+    Type 2  — Round both factors to nearest round number;
+                compensate for rounding error.
+    Type 3  — Round all three factors; watch for compounding
+                rounding error.
+    Type 4  — Recognize near-unit-fractions
+                (e.g. 428571 ≈ 3/7 × 10^6).
+    Type 5  — Round dividend and divisor to compatible
+                round numbers.
+    Type 6  — Bracket between two perfect squares; interpolate
+                linearly.
+    Type 7  — Round one or both factors; apply compensation.
+    Type 8  — Use binomial expansion or repeated squaring for
+                decimal bases close to whole numbers.
+    Type 9  — Use (a ± δ)^2 = a^2 ± 2aδ + δ^2 shortcut.
+    Type 10 — Use logarithm approximation or repeated squaring
+                with error tracking.
+    Type 11 — Use A = πr^2 with π ≈ 3.14; simplify radical
+                radius first (r = a√b → r^2 = a^2 × b).
+    Type 12 — Bracket between two perfect cubes; interpolate
+                linearly.
+    Type 13 — Simplify √a × √b = √(ab) first; divide result
+                by power of 10.
+    Type 14 — Rewrite as (a × b)^2 ÷ 10^n; estimate (a × b)
+                first, then square and divide.
+- Explain why each strategy works.
+- Provide 5 fully worked examples, one each from 5 different
+  question types.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for each of the 14 estimation types, and common mistakes
+  students make, including:
+    - Over-rounding leading to large errors
+    - Ignoring compensating errors in multi-factor multiplication
+    - Misidentifying near-unit-fractions
+    - Using wrong π approximation for circle area
+    - Confusing square root bracketing with cube root bracketing
+    - Misapplying binomial expansion for higher powers
+    - Forgetting to simplify √a × √b before dividing by
+      power of 10
+    - Confusing Type 13 (roots) with Type 14 (squares) and
+      applying the wrong simplification strategy
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on estimation problem types commonly seen in Math League
+  competitions, including how to train students to instantly recognize
+  all 14 question types and apply the correct shortcut under time
+  pressure.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+
+"""
+
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "Estimation" practice pack. Follow the PDF file structure provided.
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Estimation)
+- Use a balanced mix of the following 14 estimation question types:
+
+    Type 1  — Addition & Subtraction:
+        (estimate) [a] + [b] - [c]
+        e.g. (estimate) 1385 + 1289 - 679
+
+    Type 2  — Two-Factor Multiplication:
+        (estimate) [a] × [b]
+        e.g. (estimate) 209 × 499
+
+    Type 3  — Three-Factor Multiplication:
+        (estimate) [a] × [b] × [c]
+        e.g. (estimate) 39 × 49 × 43
+
+    Type 4  — Near-Fraction Multiplication:
+        (estimate) [digit] × [near-unit-fraction number]
+        e.g. (estimate) 9 × 428571
+
+    Type 5  — Division:
+        (estimate) [large number] ÷ [number]
+        e.g. (estimate) 849512 ÷ 169
+
+    Type 6  — Square Root:
+        (estimate) √[large number]
+        e.g. (estimate) √824892
+
+    Type 7  — Two-Factor Multiplication (mixed size):
+        (estimate) [a] × [b]
+        e.g. (estimate) 667 × 81
+
+    Type 8  — Decimal Power:
+        (estimate) [decimal] ^ [small whole number]
+        e.g. (estimate) 3.1 ^ 4
+
+    Type 9  — Small Base Square:
+        (estimate) [a] ^ 2
+        e.g. (estimate) 333 ^ 2
+
+    Type 10 — Small Base Higher Power:
+        (estimate) [a] ^ [n≥3]
+        e.g. (estimate) 333 ^ 4
+
+    Type 11 — Circle Area with Radical Radius:
+        (estimate) the area of a circle with radius [a√b] is ___
+        e.g. (estimate) the area of a circle with radius 4√2 is ___
+
+    Type 12 — Cube Root:
+        (estimate) ∛[large number]
+        e.g. (estimate) ∛824892
+
+    Type 13 — Product of Square Roots Divided by Power of 10:
+        (estimate) (√[a] × √[b]) ÷ 10^[n]
+        e.g. (estimate) (√43 × √47) ÷ 10^4
+
+    Type 14 — Product of Squares Divided by Power of 10:
+        (estimate) ([a]^2 × [b]^2) ÷ 10^[n]
+        e.g. (estimate) (43^2 × 47^2) ÷ 10^4
+
+- Distribute all 14 types as evenly as possible across 240 questions
+  (approximately 17 questions per type).
+- Include a balanced mix of difficulty levels:
+    - Easy: small numbers, straightforward rounding
+    - Medium: multi-step rounding required
+    - Hard: large numbers, decimals, or nested operations
+    - Advanced: combinations requiring multiple estimation strategies
+- Format each question exactly like this:
+    1.  (estimate) 1385 + 1289 - 679 = ___
+    2.  (estimate) 209 × 499 = ___
+    3.  (estimate) 39 × 49 × 43 = ___
+    4.  (estimate) 9 × 428571 = ___
+    5.  (estimate) 849512 ÷ 169 = ___
+    6.  (estimate) √824892 = ___
+    7.  (estimate) 667 × 81 = ___
+    8.  (estimate) 3.1 ^ 4 = ___
+    9.  (estimate) 333 ^ 2 = ___
+    10. (estimate) 333 ^ 4 = ___
+    11. (estimate) the area of a circle with radius 4√2 is ___
+    12. (estimate) ∛824892 = ___
+    13. (estimate) (√43 × √47) ÷ 10^4 = ___
+    14. (estimate) (43^2 × 47^2) ÷ 10^4 = ___
+- Do NOT repeat the same numbers.
+- Do NOT create sequential patterns.
+- Mix question types and difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Each answer must show the estimated value and acceptable range:
+    1. ≈ 2000  (acceptable range: 1900–2100)
+- Format each answer exactly like this:
+    1. ≈ {Estimated Answer}  (acceptable: {low}–{high})
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what mathematical estimation means in a contest context.
+- Show the core strategy for each of the 14 question types:
+    Type 1  — Round each term to leading digit before
+                adding/subtracting.
+    Type 2  — Round both factors to nearest round number;
+                compensate for rounding error.
+    Type 3  — Round all three factors; watch for compounding
+                rounding error.
+    Type 4  — Recognize near-unit-fractions
+                (e.g. 428571 ≈ 3/7 × 10^6).
+    Type 5  — Round dividend and divisor to compatible
+                round numbers.
+    Type 6  — Bracket between two perfect squares; interpolate
+                linearly.
+    Type 7  — Round one or both factors; apply compensation.
+    Type 8  — Use binomial expansion or repeated squaring for
+                decimal bases close to whole numbers.
+    Type 9  — Use (a ± δ)^2 = a^2 ± 2aδ + δ^2 shortcut.
+    Type 10 — Use logarithm approximation or repeated squaring
+                with error tracking.
+    Type 11 — Use A = πr^2 with π ≈ 3.14; simplify radical
+                radius first (r = a√b → r^2 = a^2 × b).
+    Type 12 — Bracket between two perfect cubes; interpolate
+                linearly.
+    Type 13 — Simplify √a × √b = √(ab) first; divide result
+                by power of 10.
+    Type 14 — Rewrite as (a × b)^2 ÷ 10^n; estimate (a × b)
+                first, then square and divide.
+- Explain why each strategy works.
+- Provide 5 fully worked examples, one each from 5 different
+  question types.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for each of the 14 estimation types, and common mistakes
+  students make, including:
+    - Over-rounding leading to large errors
+    - Ignoring compensating errors in multi-factor multiplication
+    - Misidentifying near-unit-fractions
+    - Using wrong π approximation for circle area
+    - Confusing square root bracketing with cube root bracketing
+    - Misapplying binomial expansion for higher powers
+    - Forgetting to simplify √a × √b before dividing by
+      power of 10
+    - Confusing Type 13 (roots) with Type 14 (squares) and
+      applying the wrong simplification strategy
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on estimation problem types commonly seen in Math League
+  competitions, including how to train students to instantly recognize
+  all 14 question types and apply the correct shortcut under time
+  pressure.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+"""
+
+
+for the given question: 
+""" 
+(estimate) 1385 + 1289 - 679
+(estimate) 209 * 499
+(estimate) 39 * 49 * 43
+(estimate) 9 * 428571
+(estimate) 849512 / 169
+(estimate) sqrt 824892
+(estimate) 667 x 81
+(estimate) 3.1 power of 4
+(estimate) 333 power of 2
+(estimate) 333 power of 4
+(estimate) the area os the circle with radius 4 sqrt 2 is   
+(estimate) cube root of 824892
+(estimate) square (43) x square (47) / 10 power 4
+(estimate) (43  power 2) x (47 power 2) / 10 power 4
+
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "GCD (Greatest Common Divisor)" practice pack. Follow the PDF file
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (GCD)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The GCD of [a] and [b] is ___"
+    "The GCD of [a], [b], and [c] is ___"
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The GCD of 18 and 24 is ___
+    2. The GCD of 36 and 48 is ___
+    3. The GCD of 12, 18, and 30 is ___
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 6
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what GCD (Greatest Common Divisor) means.
+- Show two methods: Listing Factors and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for GCD, and common mistakes students make
+  (e.g., confusing GCD with LCM, or stopping too early
+  when listing factors).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on GCD problem types commonly seen in Math League
+  competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+"""
+
+
+
+--------------------------------
+
+Prompt Generation for a given question
+
+
+"""
+for the given question: 
+""" 
+The GCD of 18 and 24 is 
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "GCD (Greatest Common Divisor)" practice pack. Follow the PDF file
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (GCD)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The GCD of [a] and [b] is ___"
+    "The GCD of [a], [b], and [c] is ___"
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The GCD of 18 and 24 is ___
+    2. The GCD of 36 and 48 is ___
+    3. The GCD of 12, 18, and 30 is ___
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 6
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what GCD (Greatest Common Divisor) means.
+- Show two methods: Listing Factors and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for GCD, and common mistakes students make
+  (e.g., confusing GCD with LCM, or stopping too early
+  when listing factors).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on GCD problem types commonly seen in Math League
+  competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+"""
+
+"""
+
+Generate a prompt in the Given format 
+
+""" As a math teacher who writes MathLeague.org practice materials, create a complete "LCM (Least Common Multiple)" practice pack. Follow the PDF file structure provided. Follow this exact structure: Part A — 240 Practice Questions (LCM)
+
+* Use only pairs or triples of whole numbers.
+* All questions must be of the form: "The LCM of [a] and [b] is ___" "The LCM of [a], [b], and [c] is ___"
+* Include a balanced mix of difficulty levels:
+   * Easy: two numbers between 2–20
+   * Medium: two numbers between 10–50
+   * Hard: two numbers between 50–200
+   * Advanced: three numbers between 6–60
+* Format each question exactly like this:
+   1. The LCM of 18 and 24 is ___
+   2. The LCM of 36 and 48 is ___
+   3. The LCM of 12, 18, and 30 is ___
+* Do NOT repeat number pairs or triples.
+* Do NOT create sequential patterns.
+* Mix difficulty levels throughout.
+* Provide a blank answer line between 2 columns.
+* Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+* 30 questions per table. Part B — Answer Key
+* Provide all 240 answers in order.
+* Format each answer exactly like this:
+   1. 72
+* Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+* 30 answers per table. Part C — Explanation Section
+* Explain what LCM (Least Common Multiple) means.
+* Show two methods: Listing Multiples and Prime Factorization.
+* Explain why each method works.
+* Provide 5 fully worked examples, including one with three numbers. Part D — Math League Teaching Strategy
+* Provide speed tips, pattern recognition strategies, mental-math shortcuts for LCM, and common mistakes students make (e.g., confusing LCM with GCF). Part E — Teacher Notes
+* Provide one paragraph of coaching advice for contest preparation focused on LCM problem types commonly seen in Math League competitions. Output instructions:
+* After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+* Clean, minimal styling — simple grid, no heavy color blocks.
+* Questions run continuously with forced page breaks between sub-tables.
+* Questions and Answer Key should have a forced page break between them.
+* Answer key mirrors the same layout as the question tables.
+* Answer key runs continuously without forced page breaks between sub-tables.
+* Compile everything into a single downloadable PDF. 
+
+"""
+for question: 
+""" 
+The GCD of 18 and 24 is 
+"""
+
+
+
+--------------------------------
+
+GCD (Greatest Common Divisor)
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "GCD (Greatest Common Divisor)" practice pack. Follow the PDF file
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (GCD)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The GCD of [a] and [b] is ___"
+    "The GCD of [a], [b], and [c] is ___"
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The GCD of 18 and 24 is ___
+    2. The GCD of 36 and 48 is ___
+    3. The GCD of 12, 18, and 30 is ___
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 6
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what GCD (Greatest Common Divisor) means.
+- Show two methods: Listing Factors and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts for GCD, and common mistakes students make
+  (e.g., confusing GCD with LCM, or stopping too early when
+  listing factors).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation
+  focused on GCD problem types commonly seen in Math League competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+
+
+"""
+
+
+
+--------------------------------
+
+LCM (Least Common Multiple)
+
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a 
+complete "LCM (Least Common Multiple)" practice pack. Follow the PDF file 
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (LCM)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The LCM of [a] and [b] is    "
+    "The LCM of [a], [b], and [c] is    "
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The LCM of 18 and 24 is    
+    2. The LCM of 36 and 48 is    
+    3. The LCM of 12, 18, and 30 is    
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 72
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what LCM (Least Common Multiple) means.
+- Show two methods: Listing Multiples and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math 
+  shortcuts for LCM, and common mistakes students make 
+  (e.g., confusing LCM with GCF).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation 
+  focused on LCM problem types commonly seen in Math League competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single 
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a 
+complete "LCM (Least Common Multiple)" practice pack. Follow the PDF file 
+structure provided. Follow this exact structure:
+
+Part A — 240 Practice Questions (LCM)
+- Use only pairs or triples of whole numbers.
+- All questions must be of the form:
+    "The LCM of [a] and [b] is ___"
+    "The LCM of [a], [b], and [c] is ___"
+- Include a balanced mix of difficulty levels:
+    - Easy: two numbers between 2–20
+    - Medium: two numbers between 10–50
+    - Hard: two numbers between 50–200
+    - Advanced: three numbers between 6–60
+- Format each question exactly like this:
+    1. The LCM of 18 and 24 is ___
+    2. The LCM of 36 and 48 is ___
+    3. The LCM of 12, 18, and 30 is ___
+- Do NOT repeat number pairs or triples.
+- Do NOT create sequential patterns.
+- Mix difficulty levels throughout.
+- Provide a blank answer line between 2 columns.
+- Split questions in 2 columns like (1 with 2, 3 with 4, etc.)
+- 30 questions per table.
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+    1. 72
+- Split answers in 2 columns like (1 with 2, 3 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain what LCM (Least Common Multiple) means.
+- Show two methods: Listing Multiples and Prime Factorization.
+- Explain why each method works.
+- Provide 5 fully worked examples, including one with three numbers.
+
+Part D — Math League Teaching Strategy
+- Provide speed tips, pattern recognition strategies, mental-math 
+  shortcuts for LCM, and common mistakes students make 
+  (e.g., confusing LCM with GCF).
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation 
+  focused on LCM problem types commonly seen in Math League competitions.
+
+Output instructions:
+- After generating all content, compile everything into a single 
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+"""
+
+You are an expert math question generator. Generate exactly 240 questions 
+focused on finding the LCM (Least Common Multiple) of two or more numbers, 
+similar to the example: "The LCM of 18 and 24 is ___"
+
+Structure the questions in 4 batches of 60, organized by difficulty:
+
+**BATCH 1 (Q1–Q60): Easy**
+- LCM of two small numbers (2–20)
+- Example: "The LCM of 4 and 6 is ___"
+
+**BATCH 2 (Q61–Q120): Medium**
+- LCM of two numbers (10–50)
+- Example: "The LCM of 18 and 24 is ___"
+
+**BATCH 3 (Q121–Q180): Hard**
+- LCM of two larger numbers (50–200)
+- Example: "The LCM of 72 and 96 is ___"
+
+**BATCH 4 (Q181–Q240): Advanced**
+- LCM of three numbers
+- Example: "The LCM of 12, 18, and 30 is ___"
+
+FORMAT RULES:
+- Number every question (1 to 240)
+- Each question on its own line
+- Format: "The LCM of [a] and [b] is ___"
+- After all 240 questions, include a full ANSWER KEY at the end 
+  in the format: "1. 72   2. 48   3. ..." (10 answers per line)
+- Do NOT include explanations in the question section
+- Output as clean plain text, ready for PDF formatting
+
+Begin generating all 240 questions now.
+
+"""
+
+
+
+--------------------------------
+
+Place value of a digit in a given number
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials. Create a complete "Finding the Place Value of a Digit" practice pack as a single downloadable PDF.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Place Value)
+
+- Use whole numbers ranging from 2-digit to 8-digit numbers, and include decimal numbers up to 4 decimal places.
+- Each question must ask the student to identify the place value of a specific underlined (or bolded) digit within a given number.
+- Format each question exactly like this:
+  1. What is the place value of the digit 7 in **3,7**52?
+- Cover all place values: ones, tens, hundreds, thousands, ten-thousands, hundred-thousands, millions, tenths, hundredths, thousandths, ten-thousandths.
+- Do NOT repeat the same number.
+- Do NOT create sequential patterns.
+- Mix difficulty levels (easy 2–3 digit numbers through hard 7–8 digit and decimal numbers).
+- Split questions into 2 columns (1 with 3, 2 with 4, etc.).
+- Provide space for the answer between the 2 columns.
+- 30 questions per table, with table boders hidden.  Table headding should be like QUESTIONS 1 - 30 format.
+
+
+Part B — Answer Key
+
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+  1. Thousands
+- Split answers into 2 columns (1 with 3, 2 with 4, etc.).
+- 30 answers per table, with table boders hidden. Table headding should be like Answers 1 - 30 format.
+
+
+Part C — Explanation Section
+
+- Explain the place value system (whole numbers and decimals).
+- Show a fully labeled place value chart from millions down to ten-thousandths.
+- Provide 5 fully worked examples showing how to identify the place value of a specific digit.
+
+
+Part D — Math League Teaching Strategy
+
+- Provide speed tips, place value chart memory tricks, left-to-right vs. right-to-left reading strategies, decimal awareness tips, and common mistakes students make.
+
+
+Part E — Teacher Notes
+
+- Provide one paragraph of coaching advice for contest preparation focused on place value recognition speed and accuracy.
+
+
+Output instructions:
+
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer key should have a page forced page break.
+- Answer key mirrors the same layout as the question tables.
+- Answer key run continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+
+
+"""
+
+
+
+
+--------------------------------
+
+Subtraction of Multiple Numbers
+
+
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, Create a complete “Subtraction of Multiple Numbers” practice pack. Follow the provided file format.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Subtraction of Multiple Numbers)
+- Each question must subtract 2, 3, 4, or 5 numbers (e.g., a − b, a − b - c, a − b - c - d).
+- Use only 2-digit, 3-digit, 4-digit, 5-digit, or decimal numbers.
+- Include a balanced mix of:
+  - Whole numbers only
+  - Decimals (tenths and hundredths)
+  - Mixed whole numbers and decimals
+- Numbers may repeat across different questions, but not within the same question.
+- Do NOT create sequential patterns (e.g., 100−90, 100−80).
+- Mix difficulty levels:
+  - Easy: No borrowing required (e.g., 87 − 42)
+  - Medium: Borrowing once or twice (e.g., 543 − 278)
+  - Hard: Multiple borrowing or decimals (e.g., 5000 − 1234 or 12.3 − 4.56)
+- Format each question exactly like this:
+  1. 128 − 45 =  
+- Provide space for answer between 2 columns.
+- Split questions into 2 columns like (1 with 3, 2 with 4, etc.).
+- 30 questions per table (Table 1: Questions 1–100, Table 2: Questions 101–200).
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+  1. {Answer}
+- Split answers into 2 columns like (1 with 3, 2 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain three subtraction shortcuts/strategies:
+  1. Adding up (complementary addition) — e.g., 1000 − 347 = 653 by thinking from 347 to 1000
+  2. Borrowing shortcut (equal addition method or place-value splitting)
+  3. Grouping theh Numbers”
+- Show why each method works.
+- Provide 5 fully worked examples (mix of whole numbers and decimals).
+
+Part D — Math League Teaching Strategy
+- Provide:
+  - Speed tips (e.g., subtract in stages, use complements)
+  - Pattern recognition strategies (e.g., 1000 − n = 999 − n + 1)
+  - Mental-math shortcuts (e.g., round up and adjust, subtract left to right)
+  - Common mistakes students make (e.g., borrowing from zero, misaligning decimals, subtracting smaller from larger digit regardless of place value)
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation focused on:
+  - Reducing borrowing errors
+  - Time management for subtraction problems
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+Output instructions:
+
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer key should have a page forced page break.
+- Answer key mirrors the same layout as the question tables.
+- Answer key run continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+
+--------------------------------
+
+Adding Multiple Numbers
+
+
+"""
+
+
+Act as a math teacher who writes practice materials for MathLeague.org.
+
+Create a complete “Adding Multiple Numbers” practice pack.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Adding Multiple Numbers)
+- Each question must add 2, 3, 4, or 5 numbers.
+- Use only 2-digit, 3-digit, 4-digit, 5-digit, or decimal numbers.
+- All questions must be of the form (num1 + num2) or (num1 + num2 + num3) or (num1 + num2 + num3 + num4) or (num1 + num2 + num3 + num4 + num5).
+- Include a balanced mix of:
+  - Whole numbers only
+  - Decimals (tenths and hundredths)
+  - Mixed whole numbers and decimals
+- Numbers may repeat across different questions, but not within the same question.
+- Do NOT create sequential patterns (e.g., 10+20+30).
+- Mix difficulty levels (easy: all whole numbers; medium: some decimals; hard: different place values).
+- Format each question exactly like this:
+  1. 128 + 45 + 67 + 89 =  
+  1. 128 + 45 =  
+  1. 128 + 45 + 67 =  
+- Provide space for answer between 2 columns.
+- Split questions into 2 columns like (1 with 3, 2 with 4, etc.).
+- 30 questions per table (Table 1: Questions 1–100, Table 2: Questions 101–200).
+
+Part B — Answer Key
+- Provide all 240 answers in order.
+- Format each answer exactly like this:
+  1. {Answer}
+- Split answers into 2 columns like (1 with 3, 2 with 4, etc.).
+- 30 answers per table.
+
+Part C — Explanation Section
+- Explain three strategies for adding multiple numbers efficiently:
+  1. Left-to-right addition (place value method)
+  2. Making tens/hundreds (compatible numbers)
+  2. grouping the numbers (compatible numbers)
+- Show why each method works.
+- Provide 5 fully worked examples with 4 numbers each.
+
+Part D — Math League Teaching Strategy
+- Provide:
+  - Speed tips (e.g., add in stages, look for complements)
+  - Pattern recognition strategies (e.g., pairs that sum to 10, 100, 1000)
+  - Mental-math shortcuts (e.g., drop decimals, add, then reattach)
+  - Common mistakes students make (e.g., misaligning decimals, forgetting carries)
+
+Part E — Teacher Notes
+- Provide one paragraph of coaching advice for contest preparation focused on:
+  - Reducing careless errors
+  - Time management for 3–5 number addition problems
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+Output instructions:
+
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer key should have a page forced page break.
+- Answer key mirrors the same layout as the question tables.
+- Answer key run continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+-----------------------------
+
+
+Double And Half Method Of Multiplication
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a complete “Double And Half Method Of Multiplication” practice pack.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Double And Half Method Of Multiplication)
+• Use only 2-digit, 3-digit, 4-digit, 5-digit.
+• All questions must be of the form (number × number).
+• Format each question exactly like this:
+  1. 15 × 12 =  
+  2. 35 × 114 =  
+  3. 45 × 16 =  
+  4. 25 × 1824 =
+• Do NOT repeat numbers.
+• Do NOT create sequential patterns.
+• Mix difficulty levels.
+• Provide space for answer between 2 columns.
+• Split questions in 2 columns like (1 with 3, 2 with 4, etc.).
+• 30 questions per table.
+
+
+Part B — Answer Key
+• Provide all 240 answers in order.
+• Format each answer exactly like this:
+  1. {Answer}    
+• Split answers in 2 columns like (1 with 3, 2 with 4, etc.).
+• 30 answers per table.
+
+Part C — Explanation Section
+• Explain the Double And Half Method Of Multiplication shortcut.
+• Show why the method works.
+• Provide 5 fully worked examples.
+
+Part D — Math League Teaching Strategy
+• Provide speed tips, pattern recognition strategies, mental-math shortcuts, and common mistakes students make.
+
+Part E — Teacher Notes
+• Provide one paragraph of coaching advice for contest preparation.
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+Output instructions:
+
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer key should have a page forced page break.
+- Answer key mirrors the same layout as the question tables.
+- Answer key run continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+
+------------------------------
+
+Multiply By 125
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a complete “Multiply by 125” practice pack.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Multiply by 125)
+• Use only 2-digit, 3-digit, 4-digit, 5-digit, or decimal numbers.
+• All questions must be of the form (number × 125) or (125 × number).
+• Include a balanced mix of whole numbers and decimals.
+• Format each question exactly like this:
+  1. 128 × 125 =  
+• Do NOT repeat numbers.
+• Do NOT create sequential patterns.
+• Mix difficulty levels.
+• Provide space for answer between 2 columns.
+• Split questions in 2 columns like (1 with 3, 2 with 4, etc.)
+• 30 questions per table.
+
+
+Part B — Answer Key
+• Provide all 240 answers in order.
+• Format each answer exactly like this:
+  1. {Answer}    
+• Split answers in 2 columns like (1 with 3, 2 with 4, etc.).
+• 30 answers per table.
+
+Part C — Explanation Section
+• Explain the Multiply-by-125 shortcut.
+• Show why the method works.
+• Provide 5 fully worked examples.
+
+Part D — Math League Teaching Strategy
+• Provide speed tips, pattern recognition strategies, mental-math shortcuts, and common mistakes students make.
+
+Part E — Teacher Notes
+• Provide one paragraph of coaching advice for contest preparation.
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+Output instructions:
+
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer key should have a page forced page break.
+- Answer key mirrors the same layout as the question tables.
+- Answer key run continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+------------------------------
+
+Multiply By 11
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a complete “Multiply by 11” practice pack.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Multiply by 11)
+• Use only 2-digit, 3-digit, 4-digit, 5-digit, or decimal numbers.
+• All questions must be of the form (number × 11) or (11 × number).
+• Include a balanced mix of whole numbers and decimals.
+• Format each question exactly like this:
+  1. 128 × 11 =  
+• Do NOT repeat numbers.
+• Do NOT create sequential patterns.
+• Mix difficulty levels.
+• Provide space for answer between 2 columns.
+• Split questions in 2 columns like (1 with 3, 2 with 4, etc.)
+• 30 questions per table.
+
+
+Part B — Answer Key
+• Provide all 240 answers in order.
+• Format each answer exactly like this:
+  1. {Answer}    
+• Split answers in 2 columns like (1 with 3, 2 with 4, etc.).
+• 30 answers per table.
+
+Part C — Explanation Section
+• Explain the Multiply-by-11 shortcut.
+• Show why the method works.
+• Provide 5 fully worked examples.
+
+Part D — Math League Teaching Strategy
+• Provide speed tips, pattern recognition strategies, mental-math shortcuts, and common mistakes students make.
+
+Part E — Teacher Notes
+• Provide one paragraph of coaching advice for contest preparation.
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+Output instructions:
+
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer key should have a page forced page break.
+- Answer key mirrors the same layout as the question tables.
+- Answer key run continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+"""
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a complete “Multiply by 11” practice pack.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Multiply by 11)
+• Add a 1 or 2 line instructions like:
+   Instructions: Multiply each number by 11. Write your answer in the space provided.
+• Use only 2-digit, 3-digit, 4-digit, 5-digit, or decimal numbers.
+• All questions must be of the form (number × 11) or (11 × number).
+• Include a balanced mix of whole numbers and decimals.
+• Format each question exactly like this:
+  1. 128 × 11 =       
+  2. 11 × 1287 =       
+  3. 11 × 12876 =       
+• Do NOT repeat numbers.
+• Do NOT create sequential patterns.
+• Mix difficulty levels.
+• Provide space for answer between 2 columns.
+• Split questions in 2 columns like (1 with 3, 2 with 4, etc.)
+• 30 questions per table.
+
+
+Part B — Answer Key
+• Add a 1 or 2 line instructions like:
+   Instructions: Instructions: Check your answers below. Answers are in order. Use the shortcut to check your work.
+• Provide all 240 answers in order.
+• Format each answer exactly like this:
+  1. {Answer}    
+• Split answers in 2 columns like (1 with 3, 2 with 4, etc.).
+• 30 answers per table.
+
+Part C — Explanation Section
+• Explain the Multiply-by-11 shortcut.
+• Show why the method works.
+• Provide 5 fully worked examples.
+
+Part D — Math League Teaching Strategy
+• Provide speed tips, pattern recognition strategies, mental-math shortcuts, and common mistakes students make.
+
+Part E — Teacher Notes
+• Provide one paragraph of coaching advice for contest preparation.
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+Output instructions:
+
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer key should have a page forced page break.
+- Answer key mirrors the same layout as the question tables.
+- Answer key run continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+"""
+
+------------------------------
+
+Multiply By 25
+
+"""
+
+As a math teacher who writes MathLeague.org practice materials, create a complete “Multiply by 25” practice pack.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Multiply by 25)
+• Add a 1 or 2 line instructions like:
+    Instructions: Instructions: Multiply each number by 25. Use the shortcut method (divide by 4, then multiply by 100) where helpful. 
+    Write your answer in the space provided.
+• Use only 2-digit, 3-digit, 4-digit, 5-digit, or decimal numbers.
+• All questions must be of the form (number × 25) or (25 × number).
+• Include a balanced mix of whole numbers and decimals.
+• Format each question exactly like this:
+  1. 128 × 25 =  
+  1. 1284 × 25 =  
+  1. 12438 × 25 =  
+• Do NOT repeat numbers.
+• Do NOT create sequential patterns.
+• Mix difficulty levels.
+• Provide space for answer between 2 columns.
+• Split questions in 2 columns like (1 with 3, 2 with 4, etc.)
+• 30 questions per table.
+
+
+Part B — Answer Key
+• Add a 1 or 2 line instructions like:
+   Instructions: Instructions: Check your answers below. Answers are in order. Use the shortcut to check your work.
+• Provide all 240 answers in order.
+• Format each answer exactly like this:
+  1. {Answer}    
+• Split answers in 2 columns like (1 with 3, 2 with 4, etc.).
+• 30 answers per table.
+
+Part C — Explanation Section
+• Explain the Multiply-by-25 shortcut.
+• Show why the method works.
+• Provide 5 fully worked examples.
+
+Part D — Math League Teaching Strategy
+• Provide speed tips, pattern recognition strategies, mental-math shortcuts, and common mistakes students make.
+
+Part E — Teacher Notes
+• Provide one paragraph of coaching advice for contest preparation.
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+Output instructions:
+
+- After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer key should have a page forced page break.
+- Answer key mirrors the same layout as the question tables.
+- Answer key run continuously without forced page breaks between sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+
+
+for the given question:
+
+```
+""" 
+
+  1. 128 × 25 =  
+
+  1. 1284 × 25 =  
+
+  1. 12438 × 25 =  
+
+  1. 12.5 * 25 = 
+
+  1. 25 * 3.5 = 
+
+"""
+
+```
+
+Generate a prompt in the Given format:
+
+```
+"""
+
+Use the Saved Pattern: MathLeague.org Practice Pack Generation for following
+
+As a math teacher who writes MathLeague.org practice materials, create a complete “Multiply by 25” practice pack.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Multiply by 25)
+
+• Add a 1 or 2 line instructions like:
+
+    Instructions: Multiply each number by 25. Use the shortcut method (divide by 4, then multiply by 100) where helpful. 
+
+    Write your answer in the space provided.
+
+• Use only 2-digit, 3-digit, 4-digit, 5-digit, or decimal numbers.
+
+• All questions must be of the form (number × 25) or (25 × number).
+
+• Include a balanced mix of whole numbers and decimals.
+
+• Format each question exactly like this:
+
+    1. 128 × 25 =  
+
+    2. 25 × 1,284 =  
+
+    3. 11,438 × 25 =  
+
+• Do NOT repeat numbers.
+
+• Do NOT create sequential patterns.
+
+• Mix difficulty levels.
+
+• Provide space for answer between 2 columns.
+
+• Split questions in 2 columns like (1 with 16, 2 with 17, etc.)
+
+• TABLE STRUCTURE: Use markdown grid tables. Each table has 15 rows (30 questions total). 
+
+  Example:
+
+  | 1. 128 × 25 = | 16. 25 × 34.5 = |
+
+  |----------------|------------------|
+
+  | 2. 25 × 5,234 = | 17. 729 × 25 = |
+
+  (continue for all 30 questions)
+
+• 8 tables total (Tables 1–8).
+
+Part B — Answer Key
+
+• Add a 1 or 2 line instructions like:
+
+    Instructions: Check your answers below. Answers are in order. Use the shortcut to check your work.
+
+• Provide all 240 answers in order.
+
+• Format each answer exactly like this:
+
+    1. {Answer}
+
+• Split answers in 2 columns like (1 with 16, 2 with 17, etc.)
+
+• TABLE STRUCTURE: Same two-column, 15-row, 30-answer table layout as Part A.
+
+  Example:
+
+  | 1. 3200 | 16. 862.5 |
+
+  |---------|----------|
+
+  | 2. 130850 | 17. 18225 |
+
+• 8 tables total (Tables 1–8).
+
+Part C — Explanation Section
+
+• Explain the Multiply-by-25 shortcut.
+
+• Show why the method works.
+
+• Provide 5 fully worked examples.
+
+Part D — Math League Teaching Strategy
+
+• Provide speed tips, pattern recognition strategies, mental-math shortcuts, and common mistakes students make.
+
+Part E — Teacher Notes
+
+• Provide one paragraph of coaching advice for contest preparation.
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+
+Output instructions:
+
+- Clean, minimal styling — simple grid, no heavy color blocks.
+
+- Questions run continuously with forced page breaks between sub-tables.
+
+- Questions and Answer key should have a page forced page break.
+
+- Answer key mirrors the same layout as the question tables.
+
+- Answer key runs continuously without forced page breaks between sub-tables.
+
+- Compile everything into a single downloadable PDF.
+
+"""
+
+```
