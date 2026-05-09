@@ -2246,6 +2246,396 @@ Output instructions:
 
 """
 
+-------------------------------
+
+
+for the given question: 
+
+""" 
+The GCD of 18 and 24 is
+
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+Use the Saved Pattern: MathLeague.org Practice Pack Generation for following
+
+As a math teacher who writes MathLeague.org practice materials, create a
+complete "Estimation" practice pack.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Estimation)
+
+- Add a 1 or 2 line instruction like:
+    Instructions: Estimate the value of each expression. Use mental
+    math shortcuts and rounding strategies where helpful. Write your
+    best estimate in the space provided.
+
+- Use a balanced mix of the following 14 estimation question types:
+
+    Type 1  — Addition & Subtraction:
+        (estimate) [a] + [b] - [c]
+        e.g. (estimate) 1385 + 1289 - 679
+
+    Type 2  — Two-Factor Multiplication:
+        (estimate) [a] × [b]
+        e.g. (estimate) 209 × 499
+
+    Type 3  — Three-Factor Multiplication:
+        (estimate) [a] × [b] × [c]
+        e.g. (estimate) 39 × 49 × 43
+
+    Type 4  — Near-Fraction Multiplication:
+        (estimate) [single digit] × [near-unit-fraction number]
+        e.g. (estimate) 9 × 428571
+
+    Type 5  — Division:
+        (estimate) [large number] ÷ [number]
+        e.g. (estimate) 849512 ÷ 169
+
+    Type 6  — Square Root:
+        (estimate) √[large number]
+        e.g. (estimate) √824892
+
+    Type 7  — Two-Factor Multiplication (mixed size):
+        (estimate) [3-digit] × [2-digit]
+        e.g. (estimate) 667 × 81
+
+    Type 8  — Decimal Base Power:
+        (estimate) [decimal close to whole number] ^ [small n]
+        e.g. (estimate) 3.1 ^ 4
+
+    Type 9  — Whole Number Square:
+        (estimate) [a] ^ 2
+        e.g. (estimate) 333 ^ 2
+
+    Type 10 — Whole Number Higher Power:
+        (estimate) [a] ^ [n ≥ 3]
+        e.g. (estimate) 333 ^ 4
+
+    Type 11 — Circle Area with Radical Radius:
+        (estimate) the area of a circle with radius [a√b] is     
+        e.g. (estimate) the area of a circle with radius 4√2 is     
+
+    Type 12 — Cube Root:
+        (estimate) ∛[large number]
+        e.g. (estimate) ∛824892
+
+    Type 13 — Product of Square Roots Divided by Power of 10:
+        (estimate) (√[a] × √[b]) ÷ 10^[n]
+        e.g. (estimate) (√43 × √47) ÷ 10^4
+
+    Type 14 — Product of Squares Divided by Power of 10:
+        (estimate) ([a]^2 × [b]^2) ÷ 10^[n]
+        e.g. (estimate) (43^2 × 47^2) ÷ 10^4
+
+- Distribute all 14 types as evenly as possible across 240 questions
+  (approximately 17 questions per type).
+- Include a balanced mix of difficulty levels:
+    - Easy: small numbers, straightforward rounding
+    - Medium: multi-step rounding required
+    - Hard: large numbers, decimals, or nested operations
+    - Advanced: combinations requiring multiple estimation strategies
+- Format each question exactly like this:
+    1.  (estimate) 1385 + 1289 - 679 =     
+    2.  (estimate) 209 × 499 =     
+    3.  (estimate) 39 × 49 × 43 =     
+    4.  (estimate) 9 × 428571 =     
+    5.  (estimate) 849512 ÷ 169 =     
+    6.  (estimate) √824892 =     
+    7.  (estimate) 667 × 81 =     
+    8.  (estimate) 3.1 ^ 4 =     
+    9.  (estimate) 333 ^ 2 =     
+    10. (estimate) 333 ^ 4 =     
+    11. (estimate) the area of a circle with radius 4√2 is     
+    12. (estimate) ∛824892 =     
+    13. (estimate) (√43 × √47) ÷ 10^4 =     
+    14. (estimate) (43^2 × 47^2) ÷ 10^4 =     
+
+- Do NOT repeat the same numbers.
+- Do NOT create sequential patterns.
+- Mix all 14 question types and difficulty levels throughout.
+- Provide space for answer between 2 columns.
+- Split questions in 2 columns like (1 with 16, 2 with 17, etc.)
+
+- TABLE STRUCTURE: Use markdown grid tables.
+  Each table has 15 rows (30 questions total).
+  Example:
+
+  | 1.  (estimate) 1385 + 1289 - 679 =          | 16. (estimate) 667 × 81 =                   |
+  |---------------------------------------------|---------------------------------------------|
+  | 2.  (estimate) 209 × 499 =                   | 17. (estimate) ∛824892 =                    |
+  | 3.  (estimate) 39 × 49 × 43 =                | 18. (estimate) 333 ^ 2 =                    |
+  | 4.  (estimate) 9 × 428571 =                  | 19. (estimate) (√43 × √47) ÷ 10^4 =        |
+  | 5.  (estimate) 849512 ÷ 169 =                | 20. (estimate) (43^2 × 47^2) ÷ 10^4 =      |
+  (continue for all 30 questions)
+
+- 8 tables total (Tables 1–8), 30 questions each = 240 total.
+- Forced page break between each table.
+
+Part B — Answer Key
+
+- Add a 1 or 2 line instruction like:
+    Instructions: Check your estimates below. Each answer shows the
+    exact value and acceptable estimation range. Any estimate within
+    the acceptable range is correct.
+
+- Provide all 240 answers in order.
+
+- Each answer must show the estimated value and acceptable range:
+    1. ≈ 2,000  (acceptable range: 1,900–2,100)
+
+- Format each answer exactly like this:
+    1. ≈ {Estimated Answer}  (acceptable: {low}–{high})
+
+- Split answers in 2 columns like (1 with 16, 2 with 17, etc.)
+
+- TABLE STRUCTURE: Same two-column, 15-row, 30-answer layout as Part A.
+  Example:
+
+  | 1.  ≈ 2,000  (acceptable: 1,900–2,100)      | 16. ≈ 54,000  (acceptable: 52,000–56,000)  |
+  |----------------------------------------------|---------------------------------------------|
+  | 2.  ≈ 100,000 (acceptable: 95,000–105,000)   | 17. ≈ 94  (acceptable: 90–98)              |
+  (continue for all 30 answers)
+
+- 8 tables total (Tables 1–8), 30 answers each = 240 total.
+- Answer key runs continuously without forced page breaks
+  between sub-tables.
+- Forced page break between Part A and Part B.
+
+Part C — Explanation Section
+
+- Explain what mathematical estimation means in a contest context.
+- Show the core strategy for each of the 14 question types:
+    Type 1  — Round each term to leading digit before
+                adding/subtracting.
+    Type 2  — Round both factors to nearest round number;
+                compensate for rounding error.
+    Type 3  — Round all three factors; watch for compounding
+                rounding error across three terms.
+    Type 4  — Recognize near-unit-fractions
+                (e.g. 428571 ≈ 3/7 × 10^6).
+    Type 5  — Round dividend and divisor to compatible
+                round numbers; simplify the division.
+    Type 6  — Bracket between two perfect squares;
+                interpolate linearly.
+    Type 7  — Round one or both factors to leading digit;
+                apply compensation.
+    Type 8  — Use binomial expansion
+                (a + δ)^n ≈ a^n + n·a^(n-1)·δ for decimal
+                bases close to whole numbers.
+    Type 9  — Use (a ± δ)^2 = a^2 ± 2aδ + δ^2 shortcut.
+    Type 10 — Use logarithm approximation or repeated
+                squaring with error tracking.
+    Type 11 — Use A = πr^2 with π ≈ 3.14; simplify radical
+                radius first (r = a√b → r^2 = a^2 × b).
+    Type 12 — Bracket between two perfect cubes;
+                interpolate linearly.
+    Type 13 — Simplify √a × √b = √(ab) first; divide result
+                by the given power of 10.
+    Type 14 — Rewrite as (a × b)^2 ÷ 10^n; estimate (a × b)
+                first, then square and divide.
+- Explain why each strategy works.
+- Provide 5 fully worked examples, one each from 5 different
+  question types:
+    1. (estimate) 1385 + 1289 - 679        (Type 1)
+    2. (estimate) 9 × 428571               (Type 4)
+    3. (estimate) √824892                  (Type 6)
+    4. (estimate) 3.1 ^ 4                  (Type 8)
+    5. (estimate) (43^2 × 47^2) ÷ 10^4    (Type 14)
+
+Part D — Math League Teaching Strategy
+
+- Provide speed tips, pattern recognition strategies, mental-math
+  shortcuts, and common mistakes students make, including:
+    - Over-rounding leading to large errors in multi-step problems
+    - Ignoring compensating errors in multi-factor multiplication
+    - Misidentifying near-unit-fractions (Type 4)
+    - Using wrong π approximation for circle area (Type 11)
+    - Confusing square root bracketing with cube root bracketing
+      (Types 6 and 12)
+    - Misapplying binomial expansion for higher integer powers
+      (Types 8 and 10)
+    - Forgetting to simplify √a × √b = √(ab) before dividing
+      by power of 10 (Type 13)
+    - Confusing Type 13 (roots) with Type 14 (squares) and
+      applying the wrong simplification strategy
+    - Not verifying that the final estimate falls within a
+      reasonable acceptable range
+
+Part E — Teacher Notes
+
+- Provide one paragraph of coaching advice for contest preparation
+  focused on all 14 estimation problem types commonly seen in Math
+  League competitions, including how to train students to instantly
+  recognize the question type, select the correct shortcut, and
+  produce a reliable estimate within the acceptable range under
+  strict time pressure.
+
+Output instructions:
+- After generating all content, compile everything into a single
+  downloadable PDF format (text ready to copy into a word processor).
+- Clean, minimal styling — simple grid, no heavy color blocks.
+- Questions run continuously with forced page breaks between sub-tables.
+- Questions and Answer Key should have a forced page break between them.
+- Answer key mirrors the same layout as the question tables.
+- Answer key runs continuously without forced page breaks between
+  sub-tables.
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+
+
+
+-------------------------------
+
+
+for the given question: 
+
+""" 
+(estimate) 1385 + 1289 - 679
+(estimate) 209 * 499
+(estimate) 39 * 49 * 43
+(estimate) 9 * 428571
+(estimate) 849512 / 169
+(estimate) sqrt 824892
+(estimate) 667 x 81
+(estimate) 3.1 power of 4
+(estimate) 333 power of 2
+(estimate) 333 power of 4
+(estimate) the area of the circle with radius 4 sqrt 2 is   
+(estimate) cube root of 824892
+(estimate) square (43) x square (47) / 10 power 4
+(estimate) (43  power 2) x (47 power 2) / 10 power 4
+
+
+
+"""
+
+Generate a prompt in the Given format:
+
+"""
+
+Use the Saved Pattern: MathLeague.org Practice Pack Generation for following
+
+As a math teacher who writes MathLeague.org practice materials, create a complete “Multiply by 25” practice pack.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Multiply by 25)
+
+• Add a 1 or 2 line instructions like:
+
+    Instructions: Multiply each number by 25. Use the shortcut method (divide by 4, then multiply by 100) where helpful. 
+
+    Write your answer in the space provided.
+
+• Use only 2-digit, 3-digit, 4-digit, 5-digit, or decimal numbers.
+
+• All questions must be of the form (number × 25) or (25 × number).
+
+• Include a balanced mix of whole numbers and decimals.
+
+• Format each question exactly like this:
+
+    1. 128 × 25 =  
+
+    2. 25 × 1,284 =  
+
+    3. 11,438 × 25 =  
+
+• Do NOT repeat numbers.
+
+• Do NOT create sequential patterns.
+
+• Mix difficulty levels.
+
+• Provide space for answer between 2 columns.
+
+• Split questions in 2 columns like (1 with 16, 2 with 17, etc.)
+
+• TABLE STRUCTURE: Use markdown grid tables. Each table has 15 rows (30 questions total). 
+
+  Example:
+
+  | 1. 128 × 25 = | 16. 25 × 34.5 = |
+
+  |----------------|------------------|
+
+  | 2. 25 × 5,234 = | 17. 729 × 25 = |
+
+  (continue for all 30 questions)
+
+• 8 tables total (Tables 1–8).
+
+Part B — Answer Key
+
+• Add a 1 or 2 line instructions like:
+
+    Instructions: Check your answers below. Answers are in order. Use the shortcut to check your work.
+
+• Provide all 240 answers in order.
+
+• Format each answer exactly like this:
+
+    1. {Answer}
+
+• Split answers in 2 columns like (1 with 16, 2 with 17, etc.)
+
+• TABLE STRUCTURE: Same two-column, 15-row, 30-answer table layout as Part A.
+
+  Example:
+
+  | 1. 3200 | 16. 862.5 |
+
+  |---------|----------|
+
+  | 2. 130850 | 17. 18225 |
+
+• 8 tables total (Tables 1–8).
+
+Part C — Explanation Section
+
+• Explain the Multiply-by-25 shortcut.
+
+• Show why the method works.
+
+• Provide 5 fully worked examples.
+
+Part D — Math League Teaching Strategy
+
+• Provide speed tips, pattern recognition strategies, mental-math shortcuts, and common mistakes students make.
+
+Part E — Teacher Notes
+
+• Provide one paragraph of coaching advice for contest preparation.
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+
+Output instructions:
+
+- Clean, minimal styling — simple grid, no heavy color blocks.
+
+- Questions run continuously with forced page breaks between sub-tables.
+
+- Questions and Answer key should have a page forced page break.
+
+- Answer key mirrors the same layout as the question tables.
+
+- Answer key runs continuously without forced page breaks between sub-tables.
+
+- Compile everything into a single downloadable PDF.
+
+"""
 
 
 
@@ -2321,6 +2711,151 @@ Output instructions:
 - Compile everything into a single downloadable PDF.
 
 """
+
+--------------------------------
+
+for the given question:
+
+""" 
+
+  1. 128 - 45 - 67 + 89 =  
+  1. 128 - 45 =  
+  1. 128 - 15 - 67 =  
+  1. 12844 - 145 - 67 - 89 =  
+  1. 21000 - 1280 - 14545 =  
+  1. 1286 - 455 - 670 =  
+
+"""
+
+
+
+
+
+
+
+Generate a prompt in the Given format:
+
+"""
+
+Use the Saved Pattern: MathLeague.org Practice Pack Generation for following
+
+As a math teacher who writes MathLeague.org practice materials, create a complete “Multiply by 25” practice pack.
+
+Follow the PDF file structure provided.
+
+Follow this exact structure:
+
+Part A — 240 Practice Questions (Multiply by 25)
+
+• Add a 1 or 2 line instructions like:
+
+    Instructions: Multiply each number by 25. Use the shortcut method (divide by 4, then multiply by 100) where helpful. 
+
+    Write your answer in the space provided.
+
+• Use only 2-digit, 3-digit, 4-digit, 5-digit, or decimal numbers.
+
+• All questions must be of the form (number × 25) or (25 × number).
+
+• Include a balanced mix of whole numbers and decimals.
+
+• Format each question exactly like this:
+
+    1. 128 × 25 =  
+
+    2. 25 × 1,284 =  
+
+    3. 11,438 × 25 =  
+
+• Do NOT repeat numbers.
+
+• Do NOT create sequential patterns.
+
+• Mix difficulty levels.
+
+• Provide space for answer between 2 columns.
+
+• Split questions in 2 columns like (1 with 16, 2 with 17, etc.)
+
+• TABLE STRUCTURE: Use markdown grid tables. Each table has 15 rows (30 questions total). 
+
+  Example:
+
+  | 1. 128 × 25 = | 16. 25 × 34.5 = |
+
+  |----------------|------------------|
+
+  | 2. 25 × 5,234 = | 17. 729 × 25 = |
+
+  (continue for all 30 questions)
+
+• 8 tables total (Tables 1–8).
+
+Part B — Answer Key
+
+• Add a 1 or 2 line instructions like:
+
+    Instructions: Check your answers below. Answers are in order. Use the shortcut to check your work.
+
+• Provide all 240 answers in order.
+
+• Format each answer exactly like this:
+
+    1. {Answer}
+
+• Split answers in 2 columns like (1 with 16, 2 with 17, etc.)
+
+• TABLE STRUCTURE: Same two-column, 15-row, 30-answer table layout as Part A.
+
+  Example:
+
+  | 1. 3200 | 16. 862.5 |
+
+  |---------|----------|
+
+  | 2. 130850 | 17. 18225 |
+
+• 8 tables total (Tables 1–8).
+
+Part C — Explanation Section
+
+• Explain the Multiply-by-25 shortcut.
+
+• Show why the method works.
+
+• Provide 5 fully worked examples.
+
+Part D — Math League Teaching Strategy
+
+• Provide speed tips, pattern recognition strategies, mental-math shortcuts, and common mistakes students make.
+
+Part E — Teacher Notes
+
+• Provide one paragraph of coaching advice for contest preparation.
+
+After generating all content, compile everything into a single downloadable PDF format (text ready to copy into a word processor).
+
+Output instructions:
+
+- Clean, minimal styling — simple grid, no heavy color blocks.
+
+- Questions run continuously with forced page breaks between sub-tables.
+
+- Questions and Answer key should have a page forced page break.
+
+- Answer key mirrors the same layout as the question tables.
+
+- Answer key runs continuously without forced page breaks between sub-tables.
+
+- Compile everything into a single downloadable PDF.
+
+"""
+
+
+
+
+
+
 
 
 
